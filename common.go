@@ -9,7 +9,7 @@ import (
   "github.com/tgulacsi/go-locking"
 )
 
-const metadata_limit = 1024*1024*1024
+const metadata_limit = 1024*1024
 
 type Metadata struct {
   Id string
