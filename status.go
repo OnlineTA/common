@@ -6,6 +6,7 @@ const (
   STATUS_QUEUED
   STATUS_PROCESSING
   STATUS_FINISHED
+  STATUS_FAILED
 )
 
 var status_text = [...]string {
@@ -13,6 +14,7 @@ var status_text = [...]string {
   "Queued",
   "Processing",
   "Finished",
+  "Failed",
 }
 
 var status_descr = [...]string {
@@ -20,6 +22,7 @@ var status_descr = [...]string {
   "Your submission is in queue to be processed",
   "Your submission is being processed",
   "Your assessment is ready",
+  "Assessment failed due to an internal processing error. Please contact an admin"
 }
 
 func (s Status) String() string {
