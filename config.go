@@ -12,8 +12,10 @@ type Config struct {
   Default struct {
     Basedir string
     SubmissionDir string
+    IncomingDir string
     AssessmentTimeout int
     AssessmentPort string
+    Parallelism int
   }
 }
 
